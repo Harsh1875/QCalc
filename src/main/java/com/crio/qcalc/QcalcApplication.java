@@ -11,8 +11,10 @@ public class QcalcApplication {
 		System.out.println("Hello World!");
 
 		StandardCalculator calc = new StandardCalculator();
-		calc.add(1,2);
+		calc.multiply(-Double.MAX_VALUE,5);
 		System.out.println(calc.getResult());
+		calc.printResult();
+		
 	}
 
 }
