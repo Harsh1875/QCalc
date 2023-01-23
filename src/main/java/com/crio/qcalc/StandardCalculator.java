@@ -65,11 +65,10 @@ public class StandardCalculator {
     }
 
     public final void divide(double num1, double num2) {
-        double result = num1/num2;
-        if (result == Double.POSITIVE_INFINITY || result == Double.NEGATIVE_INFINITY || result == Double.MAX_VALUE || result == -Double.MAX_VALUE) {
-            throw new ArithmeticException("Double overflow");
+        if (num2 == 0.0) {
+            throw new ArithmeticException("Divide by Zero");
         }
-        this.result = result;
+        result = num1/num2;
     }
 
 }

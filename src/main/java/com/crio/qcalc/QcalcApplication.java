@@ -10,11 +10,9 @@ public class QcalcApplication {
 		//SpringApplication.run(QcalcApplication.class, args);
 		System.out.println("Hello World!");
 
-		StandardCalculator calc = new StandardCalculator();
-		calc.multiply(-Double.MAX_VALUE,5);
-		System.out.println(calc.getResult());
+		LogicCalculator calc = new LogicCalculator();
+		calc.AND(8,6);
 		calc.printResult();
-		
 	}
 
 }
